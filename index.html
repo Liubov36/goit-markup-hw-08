@@ -85,12 +85,12 @@
 </header>
 <main>
 <!--Шапка-->        
-<!-- <section class="hero">
+<section class="hero">
     <div class="container">
     <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
     <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
 </div>
-</section> -->
+</section>
 <!--Особенности-->
 <section class="section">
     <div class="container specifics">
@@ -136,18 +136,20 @@
     </div>
 </section>
 <!--Чем мы занимаемся-->
-<!-- <section class="section about">
+<section class="section about">
 <div class="container">
     <h2 class="about__title">Чем мы занимаемся</h2>
     <ul class="about__list list">
         <li class="about__item-1">
          <div class="over--about__item">
-         <img 
-         src ="./images/box-1.jpg" 
-         alt="Делаем таблицы, рабочие программы на Ваших компьютерах"
-         width="370"
-         height="294"
-        />
+             <picture>
+                <source srcset="./images/box370.jpg 1x,
+                ./images/box740.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                <img 
+                src ="./images/box-1.jpg" 
+                alt="Делаем таблицы, рабочие программы на Ваших компьютерах"
+                width/>
+             </picture>
         <div class="about__over">
         <p class="about__text">Десктопные приложения</p>
         </div>
@@ -155,12 +157,14 @@
         </li>
         <li class="about__item">
         <div class="over--about__item">
-        <img
-         src="./images/box-2.jpg" 
-         alt="Проверяем работу программ на мобильных устройствах"
-         width="370"
-         height="294"
-        />
+            <picture>
+                <source srcset="./images/box-2-370.jpg 1x,
+                ./images/box-2-740.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                <img
+                src="./images/box-2.jpg" 
+                alt="Проверяем работу программ на мобильных устройствах"
+                width/>
+            </picture>
         <div class="about__over">
         <p class="about__text">Мобильные приложения</p>
          </div>
@@ -168,12 +172,14 @@
         </li>
         <li class="about__item">
         <div class="over--about__item">
-        <img 
-         src="./images/box-3.jpg" 
-         alt="Делаем дизайн на Ваших устройствах"
-         width="370"
-         height="294"
-        />
+            <picture>
+                <source srcset="./images/box-3-370.jpg 1x,
+                ./images/box-3-740.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                <img 
+                src="./images/box-3.jpg" 
+                alt="Делаем дизайн на Ваших устройствах"
+                width/>
+            </picture>
         <div class="about__over">
         <p class="about__text">Дизайнерские решения</p>
         </div>
@@ -181,14 +187,22 @@
         </li>
     </ul>
 </div>
-</section> -->
+</section>
 <!--Наша команда-->
-<!-- <section class="section teames">
+<section class="section teames">
 <div class="container">
     <h2 class="teames__title">Наша команда</h2>
     <ul class="teames-list list" >
         <li class="teames-list__item-1">
-            <img 
+           <div><picture>
+            <source srcset="./images/teamphoto1-desktop.jpg 1x,
+            ./images/teamphoto1-desktop-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+            <source srcset="./images/teamphoto1-tab.jpg 1x,
+            ./images/teamphoto1-tab-2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+            <source srcset="./images/teamphoto1-mob.jpg 1x,
+            ./images/teamphoto1-mob-2x.jpg 2x" media="(min-width: 320px)" type="image/jpeg">
+            <img class="card__img" src="./images/teamphoto1.jpg" alt="фотография дизайнера" width="">
+           </picture></div> <img 
              src="./images/img.jpg" 
              alt="Игорь"
              width="270"
@@ -357,7 +371,7 @@
         </li>
     </ul>
 </div>
-</section> -->
+</section>
 <!--Постоянные клиенты-->
 <!-- <section class="section regular-clientes">
     <div class="container">

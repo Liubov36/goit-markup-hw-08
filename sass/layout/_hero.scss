@@ -1,16 +1,16 @@
 .hero {
-    min-height: 400px;
+    // min-height: 400px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     text-align: center;
-    justify-content: center;
+    // justify-content: center;
     background-color:  var(--hero-btn-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @media screen and (max-width: 767px) {
-        padding: 60px 118px;
+        padding: 118px 0;
         background-image: linear-gradient(
             var(--hero-overlay), 
             var(--hero-overlay)
@@ -18,7 +18,7 @@
             url(../images/hero-mob480.jpg);
     }
     @media screen and (min-width: 768px) {
-        padding: 60px 118px;
+        padding: 118px 0;
         background-image: linear-gradient(
             var(--hero-overlay),
             var(--hero-overlay)

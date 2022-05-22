@@ -17,7 +17,8 @@
     justify-content: space-between;
 }
 .logo {
-    margin-right: 93px;
+    // margin-right: 93px;
+    display: flex;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -25,6 +26,10 @@
     letter-spacing: 0.03em;
     border: none;
     color: var(--accent-color);
+    @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    }
 }
 .logo--header {
     color: #000000;
@@ -34,6 +39,12 @@
     align-items: center;
     @media screen and (max-width: 767px) {
         display: none;
+    }
+    @media screen and (min-width: 768px) {
+    margin-left: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+    margin-left: 93px;
     }
     .header-nav__link--active {
         display: block;

@@ -478,6 +478,7 @@ ul {
 }
 
 .hero {
+  max-width: 1600px;
   margin: 0 auto;
   text-align: center;
   background-color: var(--hero-btn-color);
@@ -491,7 +492,6 @@ ul {
     padding: 118px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-overlay)), to(var(--hero-overlay))), url(../images/hero-mob480.jpg);
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/hero-mob480.jpg);
-    background-size: 480px 400px;
   }
 }
 
@@ -500,7 +500,6 @@ ul {
     padding: 118px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-overlay)), to(var(--hero-overlay))), url(../images/hero-tab768.jpg);
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/hero-tab768.jpg);
-    background-size: 768px 400px;
   }
 }
 
@@ -510,25 +509,27 @@ ul {
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-dt1600.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-dt1600.jpg);
-    background-size: 1600px 600px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: url(../images/hero-mob960.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-overlay)), to(var(--hero-overlay))), url(../images/hero-mob960.jpg);
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/hero-mob960.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url(../images/hero-tab1536.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-overlay)), to(var(--hero-overlay))), url(../images/hero-tab1536.jpg);
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/hero-tab1536.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/hero-dt3200.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-dt3200.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-dt3200.jpg);
   }
 }
 
@@ -1365,10 +1366,15 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer-adress-soc {
-    max-width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1387,6 +1393,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0;
   }
 }
 
@@ -1438,13 +1445,7 @@ img {
 }
 
 .footer-soc {
-  margin-left: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-soc {
-    margin: 0 auto;
-  }
+  margin-left: 165px;
 }
 
 .footer-soc__title {
@@ -1851,7 +1852,7 @@ img {
 }
 
 .project-over__text {
-  padding: 63px 24px;
+  padding: 24px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1862,7 +1863,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   color: var(--first-title-color);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
 }

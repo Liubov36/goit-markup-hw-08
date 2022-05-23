@@ -1,5 +1,6 @@
 .hero {
     // min-height: 400px;
+    max-width: 1600px;
     margin: 0 auto;
     // display: flex;
     // align-items: center;
@@ -16,7 +17,7 @@
             var(--hero-overlay)
             ),
             url(../images/hero-mob480.jpg);
-        background-size: 480px 400px;
+        // background-size: 480px 400px;
     }
     @media screen and (min-width: 768px) {
         padding: 118px 0;
@@ -25,7 +26,7 @@
             var(--hero-overlay)
             ),
             url(../images/hero-tab768.jpg);
-            background-size: 768px 400px;
+            // background-size: 768px 400px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -36,7 +37,7 @@
         rgba(47, 48, 58, 0.4)
         ),
         url(../images/hero-dt1600.jpg);
-        background-size: 1600px 600px;
+        // background-size: 1600px 600px;
     }
 }
 @media (min-device-pixel-ratio: 2),
@@ -45,7 +46,11 @@
   (min-resolution: 2dppx) {
   .hero {
     @media screen and (max-width: 767px) {
-        background-image:url(../images/hero-mob960.jpg);
+        background-image: linear-gradient(
+            var(--hero-overlay),
+            var(--hero-overlay)
+            ),
+            url(../images/hero-mob960.jpg);
 }}}
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -53,7 +58,10 @@
   (min-resolution: 2dppx) {
   .hero {
     @media screen and (min-width: 768px) {
-        background-image:
+        background-image: linear-gradient(
+            var(--hero-overlay),
+            var(--hero-overlay)
+            ),
         url(../images/hero-tab1536.jpg);
 }}}
 @media (min-device-pixel-ratio: 2),
@@ -62,7 +70,10 @@
 (min-resolution: 2dppx) {
     .hero {
      @media screen and (min-width: 1200px) {
-      background-image:
+      background-image: linear-gradient(  
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+        ),
       url(../images/hero-dt3200.jpg);
 }}}
 .hero__title {

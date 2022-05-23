@@ -16,8 +16,10 @@
 .footer-adress-soc {
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
-    max-width: 768px;
+    // max-width: 768px;
     display: flex;
+    justify-content: center;
+    align-items: baseline;
     }
 }
 .adress {
@@ -31,6 +33,7 @@
     max-width: 768px;
     justify-content: center;
     align-items: center;
+    margin: 0;
     }
     @media screen and (min-width: 1200px) {
     margin-right: 70px;
@@ -68,12 +71,12 @@
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-soc {
-    margin-left: auto;
-    // margin-left: 70px;
+    // margin-left: auto;
+    margin-left: 165px;
     // margin-right: 93px;
-    @media screen and (min-width: 768px) {
-    margin: 0 auto;
-    }
+    // @media screen and (min-width: 768px) {
+    // margin: 0 auto;
+    // }
 }
 .footer-soc__title {
     // display: flex;

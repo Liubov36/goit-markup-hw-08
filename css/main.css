@@ -373,6 +373,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 10;
 }
 
 .mobile-btn.is-open {
@@ -1446,6 +1447,12 @@ img {
 
 .footer-soc {
   margin-left: 165px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-soc {
+    margin-left: 165px;
+  }
 }
 
 .footer-soc__title {

@@ -20,13 +20,6 @@
     fill: var(--accent-color);
     }
 }
-.header-btn__icon {
-    // color: #000000;
-    // &:hover,
-    // &:focus {
-    // color: var(--accent-color);
-    // }
-}
 .header-btn .header-btn__icon-open {
     opacity: 1;
 }
@@ -55,8 +48,6 @@
 }
 .mobile-btn.is-open {
     transform: translateX(0);
-}
-.mobile-btn__list {
 }
 .mobile-btn__item {
     margin-bottom: 32px;
@@ -126,9 +117,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-}
-.mobile-soc-list__item {
-
 }
 .mobile-soc-list__link {
     font-family: 'Roboto';

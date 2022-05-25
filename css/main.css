@@ -665,6 +665,7 @@ ul {
 }
 
 .modal-form__title {
+  display: block;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -1448,6 +1449,13 @@ img {
 @media screen and (min-width: 768px) {
   .footer-soc {
     margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-soc {
+    margin-left: 70px;
+    margin-right: 93px;
   }
 }
 

@@ -132,7 +132,7 @@
     align-items: center;
     text-align: center;
     
-    color: #FFFFFF;
+    color: #D41443;
     display: block;
     cursor: pointer;
     padding: 10px 35px;
@@ -145,5 +145,6 @@
 }
 .btn:hover,
 .btn:focus {
+    color: #FFFFFF;
     background-color: #D41342;
 }

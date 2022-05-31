@@ -311,7 +311,7 @@
  <!-- Contacts -->
  <section class="section contacts-section">
     <div class="container contacts-all">
-      <h2 hidden list>Contacts</h2>
+      <h2 hidden>Contacts</h2>
       <div class="contacts">
        <ul class="contacts-place list">
       <li class="contacts-place__item">
@@ -366,7 +366,7 @@
             </ul>
           </adress> 
       </div>
-        <div class="contacts">
+        <div class="contacts contacts-end">
       <ul class="contacts-place list">
           <li class="contacts-place__item">
             <button type="button" class="contacts-place__btn link">CAFE</button>
@@ -393,13 +393,23 @@
             </ul>
           </adress> 
       </div>
-      <div class="button">
+      <div class="button break">
       <ul class="contacts-btn list">
         <li class="contacts-btn__item">
-          <button type="button" class="btn--active link">Our Locations</button>
+          <button type="button" class="btn--active link">OurLocations
+            <svg class="contacts-btn__icon--active" width="16" height="16">
+                <use href="./images/icons.svg#icon-vector">
+                </use>
+              </svg>
+          </button>
         </li>
         <li class="contacts-btn__item">
-          <button type="button" class="btn link">Franchise</button>
+          <button type="button" class="btn link">Franchise
+            <svg class="contacts-btn__icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-vector">
+                </use>
+              </svg>
+          </button>
         </li>
       </ul>
     </div>
